@@ -64,7 +64,7 @@ public class annotateTime {
 	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		String CONFIG_PATH = "/Users/yxiang1/JavaProjects/heideltime/conf/config.props";
+		String CONFIG_PATH = "****.props";
 		
 		HeidelTimeStandalone time= new HeidelTimeStandalone(Language.ENGLISH,
 				 DocumentType.NARRATIVES,
@@ -72,7 +72,7 @@ public class annotateTime {
 				 CONFIG_PATH,
 				 POSTagger.TREETAGGER, true);
 		
-		String inputPath = "/Users/yxiang1/Projects/TIMER/NCRF-AE/teo_dataset/trial_v0/train.conll";
+		String inputPath = "****/train.conll";
 		String outputPath = "";
 		loadFileAndAnnotate(inputPath, outputPath, time);
 		String result = "";
